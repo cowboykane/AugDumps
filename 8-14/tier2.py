@@ -1,4 +1,4 @@
-"""
+
 # Strings
 
 # TODO 10: Take a sentence from input and print:
@@ -12,13 +12,11 @@ reversed = user_sentence[::-1]
 words = user_sentence.split()
 word_count = len(words)
 
-# Tried using strip but its still including white space so I skipped
-# reverse. 
 print(f"Uppercase: {uppercase}")
 print(f"Reversed: {reversed}")
 print(f"Word Count: {word_count}")
 
-print()"""
+print()
 
 # TODO 11: write a function that returns True if the string only 
 # contains alphanumerics and hyphens
@@ -41,3 +39,14 @@ level = line[1]
 for log in log_line:
     print(date)
     print(level)
+
+# flopped this parse revisit
+
+# TODO 13: Write a function that takes a filename string and returns True
+# only if it ends with .log or .txt endswith()
+
+user_string = input("Insert a string here: ")
+
+print(user_string.endswith((".txt", ".log")))
+
+# Terrible come back to this 
