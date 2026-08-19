@@ -1,0 +1,1 @@
+    start_choice = input("Select a room to move to: ")
