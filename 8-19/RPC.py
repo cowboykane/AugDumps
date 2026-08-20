@@ -1,5 +1,3 @@
-# rock paper scissors vs computer 
-
 import random 
 
 player_score = 0
@@ -15,7 +13,7 @@ beats = {
 }
 
 
-while True:
+while player_score < 3 and computer_score < 3:
     round = round + 1
     player_choice = input("Rock, paper, or scissors: ").lower().strip()
     print(f"Player: {player_choice}")
@@ -27,6 +25,8 @@ while True:
     
     elif beats[player_choice] == computer_choice:
         print("Player Wins!\n")
+        player_score = player_score + 1
     
     else:
         print("Computer wins!\n")
+        computer_score = computer_score + 1
